@@ -83,6 +83,18 @@
             <artifactId>cucumber-reporting</artifactId>
             <version>5.8.0</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.15.0</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 

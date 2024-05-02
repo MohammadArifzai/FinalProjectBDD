@@ -22,7 +22,7 @@ Feature: Accounts Management
     Then user should see "<Number Per Page>" rows per page
 
     Examples:
-      | Selected Number | Number Per Page |
-      | 10              | 10              |
-      | 25              | 25              |
-      | 50              | 50              |
+      | Selected Number | Number Per Page  |
+      | 10              | 10               |
+      | 25              | 25               |
+      | 50              | 50               |

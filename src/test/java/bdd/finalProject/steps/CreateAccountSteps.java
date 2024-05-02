@@ -1,11 +1,9 @@
 package bdd.finalProject.steps;
+
 import bdd.finalProject.pages.CreateAccountPage;
 import bdd.finalProject.utility.DataProvider;
 import bdd.finalProject.utility.SeleniumUtilities;
-import bdd.finalProject.base.BaseSetup;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
@@ -44,7 +42,7 @@ public class CreateAccountSteps extends SeleniumUtilities {
 
     @Then("user clicks on the Create Account button")
     public void user_clicks_on_CreateAccount_button() {
-        WebElement createAccountButton = BaseSetup.getDriver().findElement(CreateAccountPage.CREATE_ACCOUNT_BUTTON);
+        WebElement createAccountButton = getDriver().findElement(CreateAccountPage.CREATE_ACCOUNT_BUTTON);
         Assert.assertTrue(createAccountButton.isDisplayed() && createAccountButton.isEnabled(), "Create Account button is not visible or enabled");
         clickOnElement(CreateAccountPage.CREATE_ACCOUNT_BUTTON);
     }
@@ -78,32 +76,6 @@ public class CreateAccountSteps extends SeleniumUtilities {
 
     }
 
-    @Given("user is on the home page")
-    public void userIsOnTheHomePage() {
-        
-    }
-
-    @When("user clicks on the Create Primary Account button")
-    public void userClicksOnTheCreatePrimaryAccountButton() {
-        
-    }
-
-    @Then("user should be navigated to Sign up your account page")
-    public void userShouldBeNavigatedToSignUpYourAccountPage() {
-        
-    }
-
-    @And("displayed email address should be the same as the entry")
-    public void displayedEmailAddressShouldBeTheSameAsTheEntry() {
-        
-    }
-
-    @When("user clicks on the Login button")
-    public void userClicksOnTheLoginButton() {
-        
-    }
-
-    @And("user clicks on the Sign In button")
-    public void userClicksOnTheSignInButton() {
-    }
 }
+
+
